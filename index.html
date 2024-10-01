@@ -8,64 +8,14 @@
 <meta name="generator" content="Jekyll v3.9.0">
 <meta property="og:title" content="ILLUSION: Integration of Life Like Unique Synthetic Identities and Objects from Neural Networks">
 <meta property="og:locale" content="en_US">
-<link rel="canonical" href="https://anonymousillusion.github.io/glowing-sniffle/">
-<meta property="og:url" content="https://anonymousillusion.github.io/glowing-sniffle//">
+<link rel="canonical" href="https://https://bhashabluff.github.io/ILLUSION//ILLUSION/">
+<meta property="og:url" content="https://https://bhashabluff.github.io/ILLUSION//ILLUSION//">
 <meta name="twitter:card" content="summary">
 <!-- End Jekyll SEO tag -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="style.css">
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f3f3f3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-    }
-    table {
-        border-collapse: collapse;
-        background-color: white;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    caption {
-      margin: 10px;
-      font-size: 1.5em;
-      font-weight: bold;
-      text-align: center;
-    }
-    th, td {
-        padding: 12px 15px;
-        text-align: left;
-        border-bottom: 1px solid #dddddd;
-    }
-    th {
-        background-color: #274546;
-        color: white;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    tr:nth-child(even) {
-        background-color: #f3f3f3;
-    }
-    tr:hover {
-        background-color: #f3f3f3;
-    }
-    .highlight {
-        color: #1e88e5;
-        font-weight: bold;
-    }
-    .checkmark {
-        color: #4CAF50;
-    }
-    .cross {
-        color: #f44336;
-    }
-    </style>
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="asset/diffgan-tts/style.css">
   </head>
   <body data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed="">
     <section class="page-header">
@@ -100,262 +50,24 @@ The recent surge in the spread of deepfakes and AI-generated content on social m
 <div style="text-align: center; width: 1000px;"> 
 <img alt="" src="viz_abs_ILLUSION.png" style="display: inline-block; vertical-align: middle;" />
 </div>
+
 <br>
-<a name="1" href="https://bhashabluff.github.io/"><h2 id="overview">Comparison With Existing Dataset</h2></a>
-
-    <table>
-        <caption>Statistics of Datasets for Existing Deepfake Detection Datasets</caption>
-        <thead>
-            <tr>
-                <th>Dataset Name</th>
-                <th>Year</th>
-                <th>Real Samples</th>
-                <th>Fake Images</th>
-                <th>Fake Audio</th>
-                <th>Fake Video</th>
-                <th>Total Samples</th>
-                <th>Generation Techniques</th>
-                <th>Identity Swapping</th>
-                <th>AI Generated Content</th>
-                <th>Both</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Deepfake-TIMIT [35]</td>
-                <td>2018</td>
-                <td>640</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>320</td>
-                <td>960</td>
-                <td>2</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>FaceForensics++ [60]</td>
-                <td>2019</td>
-                <td>1000</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>4,000</td>
-                <td>5000</td>
-                <td>4</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>Celeb-DF [41]</td>
-                <td>2020</td>
-                <td>590</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>5,639</td>
-                <td>6,229</td>
-                <td>1</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>DFDC [18]</td>
-                <td>2020</td>
-                <td>23,654</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>104,500</td>
-                <td>128,154</td>
-                <td>8</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>DeeperForensics-1.0 [26]</td>
-                <td>2020</td>
-                <td >50,000</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>10,000</td>
-                <td>60,000</td>
-                <td>1</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>ASVSpoof [72]</td>
-                <td>2021</td>
-                <td>16,492</td>
-                <td>N/A</td>
-                <td>148,148</td>
-                <td>N/A</td>
-                <td>164,640</td>
-                <td>19</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>WaveFake [27]</td>
-                <td>2021</td>
-                <td>0</td>
-                <td>N/A</td>
-                <td>117,985</td>
-                <td>N/A</td>
-                <td>117,985</td>
-                <td>6</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>FakeAVCeleb [31]</td>
-                <td>2021</td>
-                <td>500</td>
-                <td>N/A</td>
-                <td>500</td>
-                <td>9000</td>
-                <td>10,000</td>
-                <td>4</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>TIMIT-TTS [62]</td>
-                <td>2022</td>
-                <td>430</td>
-                <td>N/A</td>
-                <td>80,000</td>
-                <td>N/A</td>
-                <td>80,430</td>
-                <td>14</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>DeePhy [48]</td>
-                <td>2022</td>
-                <td>100</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>5,040</td>
-                <td>5,140</td>
-                <td>3</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>LAV-DF [10]</td>
-                <td>2022</td>
-                <td>36,431</td>
-                <td>N/A</td>
-                <td>33,176</td>
-                <td>65,997</td>
-                <td>136,304</td>
-                <td>2</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>Midjourney Kaggle [25]</td>
-                <td>2022</td>
-                <td>0</td>
-                <td>250,000</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>250,000</td>
-                <td>1</td>
-                <td class="cross">✗</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>DF-Platter [49]</td>
-                <td>2023</td>
-                <td>764</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>132,496</td>
-                <td>133,260</td>
-                <td>3</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>AV-Deepfake1M [9]</td>
-                <td>2023</td>
-                <td>286,721</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>860,039</td>
-                <td>1,146,760</td>
-                <td>3</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>AGIQA1K [74]</td>
-                <td>2023</td>
-                <td>0</td>
-                <td>1,080</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>1,080</td>
-                <td>2</td>
-                <td class="cross">✗</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td>TWIGMA [13]</td>
-                <td>2024</td>
-                <td>0</td>
-                <td>800,000</td>
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>800,000</td>
-                <td>N/A</td>
-                <td class="cross">✗</td>
-                <td class="checkmark">✓</td>
-                <td class="cross">✗</td>
-            </tr>
-            <tr>
-                <td class="highlight">ILLUSION (Ours)</td>
-                <td class="highlight">2024</td>
-                <td class="highlight">139,740</td>
-                <td class="highlight">905,548</td>
-                <td class="highlight">27,244</td>
-                <td class="highlight">299,454</td>
-                <td class="highlight">1,371,986</td>
-                <td class="highlight">28</td>
-                <td class="checkmark">✓</td>
-                <td class="checkmark">✓</td>
-                <td class="checkmark">✓</td>
-            </tr>
-        </tbody>
-    </table>
-
+<br>
+<a name="1" href="https://bhashabluff.github.io/ILLUSION//"><h2 id="visualization1">Comparison With Existing Dataset</h2></a>
+<div style="text-align: center; width: 600px;"> 
+<img alt="" src="dataset_comp.png" style="display: inline-block; vertical-align: middle;" />
+</div>
 
 <br>
 <br>
 
-<!-- <a name="2" href="https://bhashabluff.github.io/ILLUSION//"><h2 id="visualization2">Dataset Statistics</h2></a>
+<a name="2" href="https://bhashabluff.github.io/ILLUSION//"><h2 id="visualization2">Dataset Statistics</h2></a>
 <div style="text-align: center; width: 600px;"> 
 <img alt="" src="results_illusion.png" style="display: inline-block; vertical-align: middle;" />
 </div>
 
 <br>
-<br> -->
+<br>
         
 <div class="col-md-5"><h2>Leaderboard</h2><p> How your model perform in detecting deepfakes?</p><table class="table performanceTable"><tr><th>Rank</th><th>Date</th><th>Model</th><th>EER</th><th>AUC</th></tr><tr><td class="rank">1 <br></td><td><span class="date label label-default">Aug 17, 2024</span></td><td style="word-break:break-word;">AASIST</td><td><b>0.506</b></td><td>0.471</td></tr><tr><td class="rank">2 <br></td><td><span class="date label label-default">Aug 17, 2024</span></td><td style="word-break:break-word;">Conformer</td><td>0.523</td><td>0.488</td></tr>
 <tr><td class="rank">3 <br></td><td><span class="date label label-default">Aug 17, 2024</span></td><td style="word-break:break-word;">RawGAT-ST</td><td>0.571</td><td>0.402</td></tr>
