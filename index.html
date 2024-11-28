@@ -111,6 +111,180 @@
     <div class="col-md-5" style="display: inline-block; vertical-align: middle;">
       <h2>Leaderboard</h2>
       <p style="text-align: justify;"> How your model perform in detecting deepfakes?</p>
+
+      <table border="1" style="width: 100%; border: 2px solid #228B22;">
+      <tr style="background-color: white;">
+          <th style="padding: 8px; border: 1px solid #228B22;">Trained On</th>
+          <th style="padding: 8px; border: 1px solid #228B22;">Models</th>
+          <th colspan="4" style="padding: 8px; border: 1px solid #228B22;">Set A</th>
+          <th colspan="4" style="padding: 8px; border: 1px solid #228B22;">Set B</th>
+          <th style="padding: 52px; border: 1px solid #228B22;">Set C (All Fake)</th>
+          <!-- <th colspan="1" style="padding: 8px; border: 1px solid #228B22;">Set C (All Fake)</th> -->
+      </tr>
+      <tr style="background-color: white;">
+          <th colspan="1" style="padding: 8px; border: 1px solid #228B22;"></th>
+          <th style="padding: 8px; border: 1px solid #228B22;"></th>
+          <th style="padding: 8px; border: 1px solid #228B22;">Accuracy</th>
+          <th style="padding: 8px; border: 1px solid #228B22;">Accuracy-Fake</th>
+          <th style="padding: 8px; border: 1px solid #228B22;">Accuracy-Real</th>
+          <th style="padding: 8px; border: 1px solid #228B22;">AUC</th>
+          <th style="padding: 8px; border: 1px solid #228B22;">Accuracy</th>
+          <th style="padding: 8px; border: 1px solid #228B22;">Accuracy-Fake</th>
+          <th style="padding: 8px; border: 1px solid #228B22;">Accuracy-Real</th>
+          <th style="padding: 8px; border: 1px solid #228B22;">AUC</th>
+          <th style="padding: 8px; border: 1px solid #228B22;">Accuracy</th>
+      </tr>
+      <tr>
+          <td rowspan="4" style="padding: 8px; border: 1px solid #228B22;">Set A</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">F3Net</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.851</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.751</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.951</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.945</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.468</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.475</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.460</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.462</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.341</td>
+
+      </tr>
+      <tr>
+          <td style="padding: 8px; border: 1px solid #228B22;">DSP-FWA</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.984</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.982</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.986</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.986</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.428</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.437</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.418</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.396</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.214</td>
+      </tr>
+      <tr>
+          <td style="padding: 8px; border: 1px solid #228B22;">MesoInceptionNet</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.505</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.999</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.882</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.883</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.505</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.988</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.473</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.487</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.991</td>
+      </tr>
+      <tr>
+          <td style="padding: 8px; border: 1px solid #228B22;">Xception</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.851</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.846</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.856</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.920</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.497</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.749</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.283</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.515</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.633</td>
+      </tr>
+      <tr>
+          <td rowspan="4" style="padding: 8px; border: 1px solid #228B22;">Set B</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">F3Net</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.498</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.008</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.993</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.981</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.991</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.991</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.970</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.998</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.717</td>
+      </tr>
+      <tr>
+          <td style="padding: 8px; border: 1px solid #228B22;">DSP-FWA</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.498</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.001</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.999</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.501</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.993</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.995</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.990</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.999</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.727</td>
+      </tr>
+      <tr>
+          <td style="padding: 8px; border: 1px solid #228B22;">MesoInceptionNet</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.495</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.009</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.987</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.757</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.977</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.553</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.967</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.919</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.045</td>
+      </tr>
+      <tr>
+          <td style="padding: 8px; border: 1px solid #228B22;">Xception</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.502</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.018</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.922</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.526</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.977</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.987</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.966</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.997</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.725</td>
+      </tr>
+      <tr>
+          <td rowspan="4" style="padding: 8px; border: 1px solid #228B22;">Set A + Set B</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">F3Net</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.881</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.926</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.536</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.956</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.986</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.925</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.994</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.994</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.703</td>
+      </tr>
+      <tr>
+          <td style="padding: 8px; border: 1px solid #228B22;">DSP-FWA</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.972</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.975</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.970</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.995</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.992</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.995</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.989</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">1.000</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.863</td>
+      </tr>
+      <tr>
+          <td style="padding: 8px; border: 1px solid #228B22;">MesoInceptionNet</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.481</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.013</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.425</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.701</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.834</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.806</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.912</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.948</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.241</td>
+      </tr>
+      <tr>
+          <td style="padding: 8px; border: 1px solid #228B22;">Xception</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.881</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.926</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.835</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.954</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.972</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.982</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.963</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.997</td>
+          <td style="padding: 8px; border: 1px solid #228B22;">0.650</td>
+      </tr>
+    </table>
+    <br>
+    <br>
       <table class="table performanceTable">
         <tr>
           <th>Rank</th>
@@ -166,8 +340,34 @@
       <div class="row">
         <div class="col-md-8">
           <h2>Protocols</h2>
-          <p style="text-align: justify;"> Coming soon
+          <p style="text-align: left; font-size: 1.25em; color: blue;">Protocol 1 - Multi-modal Deepfake Detection
+            <ul>
+              <li style="text-align: left;">Objective: Train and test on Set A and Set B to evaluate multi-modal deepfake detection.</li>
+              <li style="text-align: left;">Set A: Subject-disjoint split (160 subjects for training, 40 for testing). Results include raw, C23, and C40 compression settings.</li>
+              <li style="text-align: left;">Set B: Real samples are sourced from COCO, BFW, MusicCaps, and MSRVTT datasets, corresponding to fakes generated using text-to-image, text-to-audio, and text-to-video models.</li>
+              <li style="text-align: left;">Output: Evaluate performance across audio, video, and multi-modal detection models.</li>
+            </ul>
           </p>
+          <p style="text-align: left; font-size: 1.25em; color: blue;"> Protocol 2 - Zero-shot/Zero-day Generalization
+            <ul>
+              <li style="text-align: left;">Objective: Test detection models on unseen generation methods.</li>
+              <li style="text-align: left;">Details: Train on Set A and test on Set B, and vice versa.</li>
+              <li style="text-align: left;">Output: Assess generalization capabilities.</li>
+            </ul>
+          </p>
+          <p style="text-align: left; font-size: 1.25em; color: blue;""> Protocol 3 - Real-World Deepfake Detection
+            <ul>
+              <li style="text-align: left;">Objective: Evaluate detection performance on real-world samples in Set C and multi-lingual samples in Set D.</li>
+              <li style="text-align: left;">Details: Train models on Set A, Set B, or both, and test on Set C and Set D.</li>
+              <li style="text-align: left;">Output: Measure robustness to real-world deepfakes and multi-lingual deepfakes.</li>
+            </ul>
+          </p>
+          <p style="text-align: left; font-size: 1.25em; color: blue;"> Protocol 4 - Model Attribution
+            <ul>
+              <li style="text-align: left;">Objective: Predict the generative technique used to create deepfakes.</li>
+              <li style="text-align: left;">Details: Train and test on fake samples from each generative technique in Set A and Set B, evaluated separately for image, video, and audio modalities.</li>
+              <li style="text-align: left;">Output: Performance on modality-specific generative technique attribution.</li>
+            </ul>
           </p>
         </div>
       </div>
