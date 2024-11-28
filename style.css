@@ -211,15 +211,16 @@ optgroup {
   font-weight: bold
 }
 
-table {
+/* table {
   border-collapse: collapse;
-  border-spacing: 0
-}
+  border-spacing: 0;
+  border-color: #228B22;
+} */
 
-td,
+/* td,
 th {
   padding: 0
-}
+} */
 
 
 .center {
@@ -227,13 +228,13 @@ th {
   margin-right: auto;
 }
 
-.highlight table td {
+/* .highlight table td {
   padding: 5px
-}
+} */
 
-.highlight table pre {
+/* .highlight table pre {
   margin: 0
-}
+} */
 
 .highlight .cm {
   color: #999988;
@@ -793,24 +794,24 @@ a:hover {
   margin-bottom: 0
 }
 
-.main-content table {
+/* .main-content table {
   display: block;
   width: 100%;
   overflow: auto;
   word-break: normal;
   word-break: keep-all;
   -webkit-overflow-scrolling: touch
-}
+} */
 
-.main-content table th {
+/* .main-content table th {
   font-weight: bold
-}
+} */
 
-.main-content table th,
+/* .main-content table th,
 .main-content table td {
   padding: 0.5rem 1rem;
   border: 1px solid #e9ebec
-}
+} */
 
 .main-content dl {
   padding: 0
